@@ -10,8 +10,15 @@
        {name: {first: 'Lina', last: 'MHD'}, age: 14} ,
        {name: {first: 'Obada', last: 'Eddin'}, age: 24} 
  ]; 
- function averageAge(people) { 
-       // YOUR CODE HERE 
- }
+ 
+       function avgAge(array){
+	var avg = [];
+	 return each(array, function (age){
+	 	if (age > 18 && age < 50){
+	 		return avg = avg + age
+	 	}
+	 })
+}
+ 
 
  averageAge(people); // 43+36+44+24 = 36.74
