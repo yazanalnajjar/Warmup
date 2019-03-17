@@ -11,7 +11,14 @@
        {name: {first: 'Obada', last: 'Eddin'}, age: 24} 
  ]; 
  function averageAge(people) { 
-       // YOUR CODE HERE 
- }
+ 	var ages = 0;
+ 	var count = 0;                                          //making a variable to store the sum of all the ages and starting our counting process
+       for (i = 0 ; i < people.length; i++)               // looping through the array of objects
+       if(people[i].age > 18 && people[i].age < 50) {	 // making a condition on the range of ages occording to the excersise
+       	ages += people[i].age;                           // suming up all the people within the age range
+       	count++                                         //counting the number of people within the age range
+       }
+      return ages/count;                                // calculating the avg.
+}
 
  averageAge(people); // 43+36+44+24 = 36.74
