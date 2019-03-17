@@ -12,6 +12,12 @@
  ]; 
  function averageAge(people) { 
        // YOUR CODE HERE 
+       var total = 0;
+       return map(people,function(element,index){
+       	if ( people[age] > 18 && people[age] < 50)
+       		return total = total + age 
+       });
+       return total /4;
  }
 
  averageAge(people); // 43+36+44+24 = 36.74
