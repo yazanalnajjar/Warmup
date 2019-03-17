@@ -10,8 +10,21 @@
        {name: {first: 'Lina', last: 'MHD'}, age: 14} ,
        {name: {first: 'Obada', last: 'Eddin'}, age: 24} 
  ]; 
+/* 17-Mar-2019 by Ayman Hariri
+ */
  function averageAge(people) { 
        // YOUR CODE HERE 
+       var counter = 0; 										// count ages between 18 and 50
+       var sum = 0;												// hold the sum of ages
+      	for (var i = 0; i < people.length; i++) {				// iterate the array people element
+      		if (people[i].age >= 18 && people[i].age <=50) {  	// check the age between 18 and 50
+      			counter++;										// increace the counter
+       		 	sum += people[i].age;							// add the age to the sum
+       		}
+      	}
+      	return sum / counter; 									// return the average
  }
+
+ averageAge(people); // 43+36+44+24 = 36.74
 
  averageAge(people); // 43+36+44+24 = 36.74
