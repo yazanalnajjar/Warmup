@@ -10,8 +10,33 @@
        {name: {first: 'Lina', last: 'MHD'}, age: 14} ,
        {name: {first: 'Obada', last: 'Eddin'}, age: 24} 
  ]; 
- function averageAge(people) { 
-       // YOUR CODE HERE 
- }
+
+
+function each(coll, f) { 
+       if (Array.isArray(coll)) { 
+             for (var i = 0; i < coll.length; i++) { 
+                   f(coll[i], i); 
+             } 
+       } else { 
+             for (var key in coll) { 
+                   f(coll[key], key); 
+             } 
+       } 
+} 
+ 
+function averageAge(people) {
+	// body...
+	var res = 0;
+	var count = 0;
+	each(people,function(obj,index) {
+		// body...
+		if(obj.age >= 18 && obj.age <= 50){
+			res += obj.age;
+			count++;
+		}
+	})
+	return res/count;
+}
+ 
 
  averageAge(people); // 43+36+44+24 = 36.74
