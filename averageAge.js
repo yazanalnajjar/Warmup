@@ -14,7 +14,7 @@
  	var ages = 0;
  	var count = 0;                                          //making a variable to store the sum of all the ages and starting our counting process
        for (i = 0 ; i < people.length; i++)               // looping through the array of objects
-       if(people[i].age > 18 && people[i].age < 50) {	 // making a condition on the range of ages occording to the excersise
+       if(people[i].age >= 18 && people[i].age <= 50) {	 // making a condition on the range of ages occording to the excersise
        	ages += people[i].age;                           // suming up all the people within the age range
        	count++                                         //counting the number of people within the age range
        }
