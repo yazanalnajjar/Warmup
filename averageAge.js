@@ -11,7 +11,23 @@
        {name: {first: 'Obada', last: 'Eddin'}, age: 24} 
  ]; 
  function averageAge(people) { 
-       // YOUR CODE HERE 
- }
+ 	var avg=0;
+ 	var counter=0;
 
- averageAge(people); // 43+36+44+24 = 36.74
+ 	for(var i=0;i<people.length;i++)
+
+ 	   {
+
+ 	 if(people[i].age>18 && people[i].age<50)	
+         {
+         	console.log(people[i].age + " " + "+");
+            avg=avg+people[i].age; 
+         	 counter++;   }
+ 	     }
+   
+        avg=avg/counter;
+         return avg;    // YOUR CODE HERE 
+      }
+         averageAge(people); // 43+36+44+24 = 36.74
+
+
