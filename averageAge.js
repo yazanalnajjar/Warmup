@@ -12,6 +12,7 @@
  ]; 
 /* 17-Mar-2019 by Ayman Hariri
  */
+ 
  function averageAge(people) { 
        // YOUR CODE HERE 
        var counter = 0; 										// count ages between 18 and 50
