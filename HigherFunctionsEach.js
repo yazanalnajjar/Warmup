@@ -6,7 +6,13 @@
         }
     }
 	function negativeAll(array) {
-	 //your code here
+	 each(array , function(num){
+        if(num > 0) {
+            return num * -1;
+        }else {
+            return num;
+        }
+     });
 	}
 
 	/*
@@ -22,6 +28,12 @@
             func(array[i], i);
         }
     }
+    var x = [2, 4, 6, 8, 10, 12, 14, 16]
 	function multiplyOfFour(array) {
-	    //your code here
+        //your code here
+        each(array , function(num){
+            if(num % 4 === 0){
+                return num *4;
+            }
+        });
 	}
