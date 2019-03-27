@@ -1,0 +1,12 @@
+body {
+    background-color: red;
+}
+
+.Heading {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    width : 200px;
+    height: 25px;
+}
